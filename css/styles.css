@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    --color-primario: #F3F5FC;
+    --color-secundario: #ffffff;
+    --color-texto-primario: #0A3871;
+    --color-texto-secundario: #495057;
+    --color-texto-terciario: #343A40;
+    --color-botón-primario: #0A3871;
+    --color-botón-secundario: #D8DFE8;
+    --color-botón-texto-primario: #FFFFFF;
+    --color-botón-texto-secundario: #0A3871;
+
+    --fuente-Inter: "Inter", sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: var(--color-primario);
+    box-sizing: border-box;
+}
+
+.header{
+    padding: 1% 0% 0% 5%;
+}
+
+.imagen-header{
+    width: 5%;
+}
+
+.primera-seccion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6% 18%;
+}
