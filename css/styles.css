@@ -67,17 +67,20 @@ main{
 .input-text-1{
     width: 100%;
     height: 500px;
-    border: 2px solid var(--color-texto-primario);
+    border: hidden;
     border-radius: 16px;
     padding: 10px;
     font-weight: 400;
     font-size: 32px;
     color: var(--color-botón-primario);
     margin-bottom: 10px;
-    text-align: center;
+    text-align: start;
     display: flex;
     align-items: center;
     justify-content: center;
+    box-sizing: border-box;
+    outline: none;
+    resize: none;
 }
 
 .advertencia-1{
@@ -97,15 +100,27 @@ main{
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%23495057' d='M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4m.002 6a1 1 0 1 0 0 2a1 1 0 0 0 0-2'/%3E%3C/svg%3E");
 }
 
+.botonesSeccion-1{
+    display: flex;
+    gap: 4%;
+    justify-content: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
 .boton-encriptar{
     display: block;
-    width: 80%;
+    width: 80vw;
+    max-width: 328px;
+    height: 8vh;
+    max-height: 67px;
     padding: 10px;
     margin: 10px 0;
     text-align: center;
     text-decoration: none;
-    font-size: 16px;
-    border-radius: 5px;
+    font-size: 1rem;
+    border: 1px solid var(--color-botón-texto-secundario);
+    border-radius: 24px;
     cursor: pointer;
     transition: background-color 0.3s ease;
     background-color: var(--color-botón-primario);
@@ -118,17 +133,25 @@ main{
 
 .boton-desencriptar {
     display: block;
-    width: 80%;
-    padding: 10px;
+    width: 80vw;
+    max-width: 328px;
+    height: 8vh;
+    max-height: 67px;
+    padding: 1rem;
     margin: 10px 0;
     text-align: center;
     text-decoration: none;
-    font-size: 16px;
-    border-radius: 5px;
+    font-size: 1rem;
+    border-radius: 24px;
+    border: 1px solid var(--color-botón-texto-secundario);
     cursor: pointer;
     transition: background-color 0.3s ease;
     background-color: var(--color-botón-secundario);
     color: var(--color-botón-texto-secundario);
+}
+
+.boton-desencriptar:hover {
+    background-color: #EFF1FA;
 }
 
 .boton-desencriptar:hover{
@@ -174,11 +197,8 @@ main{
     margin-bottom: 10px;
     display: flex;
     justify-content: center;
-    flex-direction: row;
-    align-items: center;
-    text-align: center;
-    align-content: center;
-    overflow: hidden;
+    text-align: start;    
+    overflow-y: auto;
     outline: none;
     resize: none;
 }
@@ -202,13 +222,17 @@ main{
 
 .boton-copiar{
     display: block;
-    width: 80%;
-    padding: 10px;
+    width: 80vw;
+    max-width: 328px;
+    height: 8vh;
+    max-height: 67px;
+    padding: 1rem;
     margin: 10px 0;
     text-align: center;
     text-decoration: none;
     font-size: 16px;
-    border-radius: 5px;
+    border-radius: 24px;
+    border: 1px solid var(--color-botón-texto-secundario);
     cursor: pointer;
     transition: background-color 0.3s ease;
     background-color: var(--color-botón-secundario);
@@ -252,14 +276,14 @@ footer{
     }
 
 @media (max-width: 1000px){
+
+    .botonesSeccion-1{
+            flex-wrap: wrap;
+    }
+
     .Muñeco{
         display: none;
     }
-
-    .segunda-seccion {
-        margin: 5% auto 15%;
-    }
-}
 
 @media (width: 500px) {
     .input-text-1 {

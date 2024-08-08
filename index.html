@@ -14,16 +14,18 @@
 
     <main>
         <section class="primera-seccion">
-            <input type="text" class="input-text-1" name="Input" id="input-text-1">
+            <textarea type="text" class="input-text-1" name="Input" id="input-text-1"></textarea>
             <p class="advertencia-1" style="display: none;"><span class="bi--exclamation-circle-fill"></span> Solo letras minúsculas y sin acentos</p>
-            <button id="boton-encriptar" class="boton-encriptar" href="">Encriptar</button>
-            <button id="boton-desencriptar" class="boton-desencriptar" href="">Desencriptar</button>
+            <section class="botonesSeccion-1">
+                <button id="boton-encriptar" class="boton-encriptar" href="">Encriptar</button>
+                <button id="boton-desencriptar" class="boton-desencriptar" href="">Desencriptar</button>
+            </section>
         </section>
         <section class="segunda-seccion">
             <img class="Muñeco" src="./assets/Muñeco.png" alt="Muñeco">
             <p class="segunda-seccion-texto-1">Ningún mensaje fue encontrado</p>
             <p class="segunda-seccion-texto-2">Ingresa el texto que desees encriptar o desencriptar.</p>
-            <textarea class="input-text-2" name="input-text-2" id="input-text-2" style="display: none;" readonly onclick="none"></textarea>
+            <textarea type="text" class="input-text-2" name="input" id="input-text-2" style="display: none;" readonly onclick="none"></textarea>
             <p class="textocopiado" style="display: none;"><span class="solar--copy-linear "></span> Texto copiado</p>
             <button id="boton-copiar" class="boton-copiar" href="" style="display: none;">Copiar</button>
         </section>
