@@ -97,5 +97,5 @@ document.getElementById("boton-copiar").addEventListener('click', function(){
     document.execCommand('copy');
     mostrarMensajeTextoCopiado();
 
-    setTimeout(ocultarMensajeTextoCopiado, 5000);
+    setTimeout(ocultarMensajeTextoCopiado, 3000);
 });
