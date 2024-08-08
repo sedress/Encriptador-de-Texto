@@ -284,6 +284,7 @@ footer{
     .Muñeco{
         display: none;
     }
+}
 
 @media (width: 500px) {
     .input-text-1 {
