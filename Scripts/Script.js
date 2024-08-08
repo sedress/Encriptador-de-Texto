@@ -1,6 +1,6 @@
 //Restricciones
 function restricciones(texto) {
-    return /^[a-z\s]+$/.test(texto);
+    return /^[a-z\s]+$/.test(texto) && /[aeiou]/.test(texto);
 }
 
 //Encriptar texto
@@ -75,6 +75,19 @@ document.getElementById("boton-desencriptar").addEventListener("click", () => {
     }
 });
 
+//Mostrar el mensaje de advertencia
+function mostrarMensajeTextoCopiado() {
+    let TextoCopy = document.querySelector(".textocopiado");
+    TextoCopy.style.display = "block";
+}
+
+//Ocultar el mensaje de advertencia
+function ocultarMensajeTextoCopiado() {
+    let TextoCopy = document.querySelector(".textocopiado");
+    TextoCopy.style.display = "none";
+}
+
+
 //Botón Copiar
 document.getElementById("boton-copiar").addEventListener('click', function(){
     var TextoCopiar = document.getElementById("input-text-2");
@@ -82,5 +95,7 @@ document.getElementById("boton-copiar").addEventListener('click', function(){
     TextoCopiar.setSelectionRange(0, 99999);
 
     document.execCommand('copy');
-    alert('Texto copiado');
+    mostrarMensajeTextoCopiado();
+
+    setTimeout(ocultarMensajeTextoCopiado, 5000);
 });
