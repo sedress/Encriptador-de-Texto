@@ -7,7 +7,9 @@
     --color-texto-secundario: #495057;
     --color-texto-terciario: #343A40;
     --color-botón-primario: #0A3871;
-    --color-botón-secundario: #D8DFE8;
+    --color-botón-primario-hoover: #072B61;
+    --color-botón-secundario: #FFFFFF;
+    --color-botón-secundario-hoover: #D8DFE8;
     --color-botón-texto-primario: #FFFFFF;
     --color-botón-texto-secundario: #0A3871;
 
@@ -128,7 +130,7 @@ main{
 }
 
 .boton-encriptar:hover{
-    background-color: #072B61;
+    background-color: var(--color-botón-primario-hoover);
 }
 
 .boton-desencriptar {
@@ -151,7 +153,7 @@ main{
 }
 
 .boton-desencriptar:hover {
-    background-color: #EFF1FA;
+    background-color: var(--color-botón-secundario-hoover);
 }
 
 .boton-desencriptar:hover{
@@ -240,7 +242,7 @@ main{
 }
 
 .boton-copiar:hover{
-    background-color: #EFF1FA;
+    background-color: var(--color-botón-secundario-hoover);
 }
 
 footer{
