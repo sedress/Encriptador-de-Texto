@@ -113,10 +113,8 @@ main{
 
 .boton-encriptar{
     display: block;
-    width: 80vw;
-    max-width: 328px;
-    height: 8vh;
-    max-height: 67px;
+    width: 300px;
+    height: 67px;
     padding: 10px;
     margin: 10px 0;
     text-align: center;
@@ -136,10 +134,8 @@ main{
 
 .boton-desencriptar {
     display: block;
-    width: 80vw;
-    max-width: 328px;
-    height: 8vh;
-    max-height: 67px;
+    width: 300px;
+    height: 67px;
     padding: 1rem;
     margin: 10px 0;
     text-align: center;
@@ -279,15 +275,18 @@ footer{
     }
 
 @media (max-width: 1000px){
-
     .botonesSeccion-1{
-            flex-wrap: wrap;
+        flex-wrap: wrap;
     }
 
     .Muñeco{
         display: none;
     }
 }
+
+    .boton-copiar, .boton-desencriptar, .boton-encriptar {
+        width: 200px;
+    }
 
 @media (width: 500px) {
     .input-text-1 {
